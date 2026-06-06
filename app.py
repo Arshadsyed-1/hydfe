@@ -65,17 +65,17 @@ if page == "Customer Feedback":
             else:
                 st.error("something went wrong")
                 st.write(response.text)
-    elif page == "Owner Dashboard":
-        st.header("📝Owner Dashboard")
-        if st.button("Load feedback"):
-            response = requests.get(f"{backend_url}/feedback")
-            if response.status_code == 200:
-                data = response.json()
-                if len(data) == 0:
-                    st.info("No Feedback Found")
-                else:
-                    st.dataframe(data,use_container_width=True)
+elif page == "Owner Dashboard":
+    st.header("📝Owner Dashboard")
+    if st.button("Load feedback"):
+        response = requests.get(f"{backend_url}/feedback")
+        if response.status_code == 200:
+            data = response.json()
+            if len(data) == 0:
+                st.info("No Feedback Found")
             else:
-                st.error("Unable to fetch feedback")
-                st.write(response.text)
+                st.dataframe(data,use_container_width=True)
+        else:
+             st.error("Unable to fetch feedback")
+             st.write(response.text)
 

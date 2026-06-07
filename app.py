@@ -10,7 +10,7 @@ st.markdown(
     f"""
     <style>
     .stApp {{
-        background-image: url("https://i.pinimg.com/originals/e9/88/09/e988093865a29fbf6ed8c4f0beb8e302.jpg");
+        background-image: url("https://chatgpt.com/c/6a2515a9-a52c-83a2-aa52-cea8ae648b29");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

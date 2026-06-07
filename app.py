@@ -10,7 +10,7 @@ st.markdown(
     f"""
     <style>
     .stApp {{
-        background-image: url("https://chatgpt.com/s/m_6a2517c5d3c4819183399722a0842970");
+        background-image: url("https://static.vecteezy.com/system/resources/previews/032/940/126/large_2x/gourmet-biryani-with-saffron-rice-and-chicken-free-photo.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

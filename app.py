@@ -36,7 +36,7 @@ st.title("SAFIK HYDERABAD BIRIYANI🍗")
 
 page = st.sidebar.selectbox(
                               "Select Page ",
-                              ["Customer Feedback","Owner Dashboard""Today's Feedback",
+                              ["Customer Feedback","Owner Dashboard","Today's Feedback",
         "Analytics","AI Summary"]
                             )
 

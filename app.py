@@ -10,7 +10,7 @@ st.markdown(
     f"""
     <style>
     .stApp {{
-        background-image: url("https://chatgpt.com/c/6a2515a9-a52c-83a2-aa52-cea8ae648b29");
+        background-image: url("Download the 4K Chicken Dum Biryani Background Image");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

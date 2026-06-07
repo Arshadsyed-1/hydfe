@@ -10,7 +10,7 @@ st.markdown(
     f"""
     <style>
     .stApp {{
-        background-image: url("https://static.vecteezy.com/system/resources/previews/036/057/056/non_2x/ai-generated-chicken-biryani-served-on-a-plate-photo.jpg");
+        background-image: url("https://i.pinimg.com/originals/e9/88/09/e988093865a29fbf6ed8c4f0beb8e302.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

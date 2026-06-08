@@ -37,7 +37,7 @@ st.title("SAFIK HYDERABAD BIRIYANI🍗")
 page = st.sidebar.selectbox(
                               "Select Page ",
                               ["Customer Feedback","Owner Dashboard","Today's Feedback",
-        "Analytics","AI Summary"]
+        "Analytics","AI Summary","Ask AI From Feedback"]
                             )
 
  
@@ -155,4 +155,34 @@ elif page == "AI Summary":
 
             else:
                 st.error("Unable to generate AI summary")
+                st.write(response.text)
+elif page == "Ask AI From Feedback":
+
+    st.header("🤖 Ask AI From Customer Feedback")
+
+    question = st.text_input("Ask question about customer feedback")
+
+    if st.button("Ask AI"):
+
+        if question == "":
+            st.warning("Please enter your question")
+
+        else:
+            response = requests.post(
+                f"{backend_url}/feedback/rag-question",
+                json={"question": question}
+            )
+
+            if response.status_code == 200:
+                result = response.json()
+
+                st.success("AI Answer")
+                st.write(result["answer"])
+
+                with st.expander("Related Feedback Used by AI"):
+                    for item in result["related_feedback"]:
+                        st.write(item)
+
+            else:
+                st.error("Unable to get AI answer")
                 st.write(response.text)
